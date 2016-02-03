@@ -69,7 +69,7 @@
 
 				<section>
 <pre><code data-trim data-noescape class='javascript'>
-let lentXavierTent = new Promise((resolve, reject) => {
+let lentXavierTent = Promise((resolve, reject) => {
   // ...
   resolve(tent)
   // ...
@@ -128,9 +128,9 @@ lentXavierTent.then((tent) => {
 
 				<section>
 <pre><code data-trim data-noescape class='javascript'>
-let lentXavierTent = new Promise((resolve, reject) => { ... })
-let lentKatBackpack = new Promise((resolve, reject) => { ... })
-let lentStuartBag = new Promise((resolve, reject) => { ... })
+let lentXavierTent = Promise((resolve, reject) => { ... })
+let lentKatBackpack = Promise((resolve, reject) => { ... })
+let lentStuartBag = Promise((resolve, reject) => { ... })
 </code></pre>
 					<aside class="notes">
 						here is what those look like as promises
@@ -189,12 +189,12 @@ Promise.all(promises).then((campingGear) => {
 
 				<section>
 <pre><code data-trim data-noescape class='javascript'>
-let lentDiannaTent = new Promise((resolve, reject) => { ... })
-let lentXavierTent = new Promise((resolve, reject) => { 
+let lentDiannaTent = Promise((resolve, reject) => { ... })
+let lentXavierTent = Promise((resolve, reject) => { 
   lentDiannaTent.then(resolve).catch(reject)
 })
-let lentKatBackpack = new Promise((resolve, reject) => { ... })
-let lentStuartBag = new Promise((resolve, reject) => { ... })
+let lentKatBackpack = Promise((resolve, reject) => { ... })
+let lentStuartBag = Promise((resolve, reject) => { ... })
 </code></pre>
 					<aside class="notes">
 						here is what those look like as promises
@@ -219,6 +219,7 @@ Promise.all(promises).then((campingGear) => {
 					<h2>Thanks!</h2>
 					<p>Heather Brysiewicz</p>
 					<p><a href='//twitter.com/caligoanimus'>@caligoanimus</a></p>
+					<p><a href='//hbrysiewicz.com/sdjs-promises'>hbrysiewicz.com/sdjs-promises</a></p>
 			</div>
 		</div>
 
